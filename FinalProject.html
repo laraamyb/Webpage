@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiotherapy</title>
+    <style>
+        h1 {
+            background: #f34b2170;
+            padding: 12px;
+            border-radius: 4px;
+            text-align: center;
+            color: #28527a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+            margin: 15px 30px 15px 30px;
+        }
+        h2 {
+            text-align: center;
+             color: #28527a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p {
+            text-align: center;
+             color: #28527a;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.3;
+            padding:20px;
+        }
+        img {
+            display:grid;
+            grid-auto-columns: 33%;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 30px;
+            box-shadow: 4px 4px 5px rgb(0,0,0, 0.2);
+        }
+        button {
+            display:block;
+            border-radius:6px;
+            border-width:2px;
+            box-shadow: 4px 4px 5px rgb(0,0,0, 0.4);
+            border-color: #bd2000;
+          padding: 12px;
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-bottom: 10px;
+            background-color: #f34b21;
+            color:white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: all 200ms ease-in-out;
+        }
+        button:hover {
+            cursor: pointer;
+            background:#bd2000;
+            box-shadow:7px 7px 5px rgb(0,0,0, 0.5);
+        }
+        body {
+            background:linear-gradient(#F5F8FA, #FFFFFF);
+        }
+        a {
+            text-decoration: none;
+        }
+    .learnMore {
+        font-style:italic;
+        font-size: 12px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+    .page {
+        border: #faf3e0;
+        border-style:dotted;
+    }
+    .introduction {
+        border: #faf3e0;
+        border-radius: 4px;
+        border-style: dashed;
+        padding: 12px;
+        margin: 10px 5px 10px 5px;
+    }
+    .technical {
+        border: #faf3e0;
+        border-radius: 4px;
+        border-style: dashed;
+        padding: 12px;
+        margin: 10px 5px 10px 5px;
+    }
+    </style>
+</head>
+<body>
+   <div class = "page">
+    <h1>
+        Therapeutic Radiographers
+    </h1>
+    <h2>
+        Interested in a new career in healthcare?
+        <br />
+        Keep reading to learn about Radiography as a profession!
+    </h2>
+    <p class = "introduction"> 
+        <Strong>Therapeutic Radiographers</Strong> are qualified to use specifically designed machines to deliver high energy x-rays to patients for therapeutic purposes. The most common use of this treatment is for Cancer; 40% of patients will require Radiotherapy treatment.
+   <img src ="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/380/original/GIF-210122_062711.gif?1614343267" alt= "MLC movement">
+    </p>
+    <div class = "technical" > 
+        <p>
+As Therapeutic Radiographers we use a lot of high tech equipment! We must understand how to use it, and be innovative in how we could develop things for the future to improve our care.
+<br /> 
+The first step is to use the CT scanner to gain the information we need to plan the treatment. Then we use this information to design a treatment plan to be delivered.
+</p>   
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/381/original/GIF-210121_222816.gif?1614343403" alt= "CT Scanner">
+<p> 
+    The treatment machine is called a LINAC, short for Linear Accelerator. It looks like this:
+</p> 
+<img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/382/original/GIF-210121_222629.gif?1614343505" alt= "LINAC">
+    </div>
+<div class = "learnMore">
+    <p> To learn more click the buttons below:</p>
+    <br/>
+    <a href = "https://archive.sor.org/public-and-patient/overview-radiotherapy" target= "_blank"> <button class = "society">
+        The Professional Body
+    </button> </a>
+    <a href= "https://www.cancerresearchuk.org/about-cancer/cancer-in-general/treatment/radiotherapy" target= "_blank">
+<button class="charity"> More about Radiotherapy </button>
+    </a>
+    <button class = "sign-up"> Sign Up to Newsletter</button>
+
+</div>
+<p>
+   Coded by 💻 <br/> <a href = "https://www.linkedin.com/in/lara-burgess-52927b1b3/" target = "_blank"> Lara Burgess </a>
+</p>
+</div>
+<script>
+    function signUp() {
+let name = prompt ("What is your name?");
+let email = prompt ("Please enter your email:");
+        if (name.length > 0 && email.length > 0) {
+            alert(
+                "Thank you, " + name + "! We'll contact you with more information shortly!")
+        };
+    }
+let signUpButton = document.querySelector(".sign-up");
+signUpButton.addEventListener("click", signUp);
+</script>
+</body>
+</html>
